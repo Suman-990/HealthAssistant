@@ -1,4 +1,3 @@
-// File: ChatController.java
 package com.example.groqchatbot.controller;
 
 import com.example.groqchatbot.dto.PredictionResponse;
@@ -120,7 +119,7 @@ public class ChatController {
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("model", "llama-3.3-70b-versatile");
         requestBody.put("messages", messages);
-        requestBody.put("temperature", 0.3); // Lower for more consistent structured output
+        requestBody.put("temperature", 0.3);
         requestBody.put("max_tokens", 1500);
 
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
